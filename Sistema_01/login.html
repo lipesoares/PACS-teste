@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+<!-- ======================= CSS ======================= -->
+    <link rel="stylesheet" type="text/css" href="/Sistema_01/css/global.css" />
+    <link rel="stylesheet" type="text/css" href="/Sistema_01/css/login.css" />
+<!-- =================================================== -->
+<!-- ======================= JS  ======================= -->
+    <script type="text/javascript" src="/Sistema_01/js/input-animation-login.js"></script>
+    <script type="text/javascript" src="/Sistema_01/js/login.js"></script>
+<!-- =================================================== -->
+</head>
+
+<body onload="animarInputs()">
+    <div class="container">
+        <div class="container-login">
+            <div class="wrap-login">
+                <form class="login-form" id="login-form">
+                    <span class="login-form-title">
+                        Bem-Vindo
+                    </span>
+
+                    <div class="wrap-input margin-top-35 margin-bottom-35">
+                        <input class="input-form" type="text" id="user" name="usuario" autocomplete="off" />
+                        <span class="focus-input-form" data-placeholder="Usuário"></span>
+                    </div>
+
+                    <div class="wrap-input margin-bottom-35">
+                        <input class="input-form" type="password" id="password" name="password" />
+                        <span class="focus-input-form" data-placeholder="Senha"></span>
+                    </div>
+
+                    <div class="container-login-form-btn">
+                        <button type="button" class="login-form-btn" onclick="login()">
+                            Login
+                        </button>
+                    </div>
+
+                    <ul class="login-utils">
+                        <li class="margin-top-8 margin-bottom-8">
+                            <span class="text1">
+                                Esqueceu sua
+                            </span>
+                            <a href="#" class="text2">
+                                senha?
+                            </a>
+                        </li>
+                        <li>
+                            <span class="text1">
+                                Não tem conta?
+                            </span>
+                            <a href="novo_usuario.html" class="text2">
+                                Criar
+                            </a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <img src="/Sistema_01/images/login.png" alt="Login" width="300" height="300" class="margin-left-50" />
+        </div>
+    </div>
+</body>
+</html>

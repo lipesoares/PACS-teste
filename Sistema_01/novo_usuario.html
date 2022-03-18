@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Cadastro</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <!-- <link rel="stylesheet" href="css/login.css"> -->
+    <link rel="stylesheet" href="css/new-login.css">
+
+    <script src="js/input-animation-login.js"></script>
+
+</head>
+<body onload="animarInputs()">
+    <div id="main-container">
+        <div id="container-new-user">
+            <form id="form-new-user">
+                
+                <div class="wrap-input margin-top-35 margin-bottom-35">
+                    <input class="input-form" id="input-new-email" type="email" name="new-email" autocomplete="off" />
+                    <span class="focus-input-form" data-placeholder="E-mail"></span>
+                </div>
+                
+                <div class="wrap-input margin-top-35 margin-bottom-35">
+                    <input class="input-form" id="input-new-user" type="text" name="new-user"/>
+                    <span class="focus-input-form" data-placeholder="Usuário"></span>
+                </div>
+
+                <div class="wrap-input margin-top-35 margin-bottom-35">
+                    <input class="input-form" id="input-new-pass" type="password" name="new-pass"/>
+                    <span class="focus-input-form" data-placeholder="Senha"></span>
+                </div>
+
+                <div class="wrap-input margin-top-35 margin-bottom-35">
+                    <input class="input-form" id="input-confirm-pass" type="password" name="confirm-new-pass"/>
+                    <span class="focus-input-form" data-placeholder="Confirmar Senha"></span>
+                </div>
+                
+                <div class="container-login-form-btn">
+                    <button type="button" class="login-form-btn cancel-btn" onclick="location.href='login.html'">
+                        Cancelar
+                    </button>
+                </div>
+
+                <div class="container-login-form-btn">
+                    <button type="button" class="login-form-btn" onclick="" >
+                        Salvar
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
